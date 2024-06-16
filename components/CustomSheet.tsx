@@ -42,6 +42,7 @@ const CustomSheet = () => {
         <div className="flex md:hidden flex-col justify-center items-center mt-8 gap-10">
           {navLinks.map((link) => (
             <Link
+            key={link.id}
               className={`font-semibold ${
                 link.id === 1
                   ? "text-[#111729] dark:text-white"

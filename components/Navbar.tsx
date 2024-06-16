@@ -34,6 +34,7 @@ const Navbar = () => {
       <div className="hidden md:flex justify-between items-center gap-4 lg:gap-8 ">
         {navLinks.map((link) => (
           <Link
+          key={link.id}
             className={`font-medium ${
               link.id === 1
                 ? "text-[#111729] dark:text-white"
